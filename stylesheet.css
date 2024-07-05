@@ -1,14 +1,81 @@
 body {
-    background-color:rgb(22, 174, 194); 
-    color:white; text-align:center; 
+    background-color:rgb(174, 175, 175); 
+    color:rgb(0, 0, 0); text-align:center; 
     font-family: 'Courier New', Courier, monospace; 
-    border: 20px double rgb(255, 255, 255);
-    outline-color:fuchsia
+    border: 20px double rgb(128, 0, 0);
 }
-
-#myHeader {
-    font-size:80px; background-color:crimson
-}
+h1 {
+    background-color:rgb(128, 0, 0);
+    color:rgb(174, 175, 175);
+    text-decoration: underline;
+    margin: 20px;
+    transition: 1s;
+} 
 pre {
     font-size:30px;
+}
+table {
+    border:1px solid black;
+    text-align: center;
+}
+th {
+    background-color: rgb(128, 0, 0);
+    color:rgb(174, 175, 175);
+    padding: 0px;
+    transition: 1s;
+}
+th:hover {
+    background-color: rgb(100, 0, 0);
+    transition: 1s background-color;
+}
+h1:hover {
+    background-color: rgb(174, 175, 175); 
+    color:rgb(128, 0, 0);
+    transition : 1s background-color, 1s color;
+}
+abbr:hover {
+    font-size: 1.5em;
+    transition : 1s font-size;  
+}
+#even {
+    background-color : white;
+}
+#odd {
+    background-color: grey;
+}
+td {
+    padding: 0px;
+}
+button {
+    background-color: rgb(128, 0, 0);
+    color :rgb(174, 175, 175);
+    cursor: pointer;
+    border : none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration-thickness: 4px ;
+    display: inline-block;
+    font-size: 16px;  
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: 1s background-color, color;
+}
+button:hover{
+    background-color : rgb(100, 0, 0);
+    transition: 1s background-color, color;
+}
+
+.js-my-text {
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+}
+.js-my-other-text {
+    opacity: 1;
+    transition: 0.6s ease-in-out;
+}
+.active {
+    opacity: 1;
+}
+.inactive {
+    opacity: 0;
 }

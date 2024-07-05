@@ -1,26 +1,27 @@
 <html>
 <head>
-    <title>Main</title>
+    <title>Charlie's Amazing Webpage | Main</title>
     <link rel = "stylesheet" href="stylesheet.css">
+    <script type = "text/javascript" src = "app.js"></script>
 </head>
 <body>
 
-    <h1 id = "myHeader"><u>Header</u></h1>
+    <h1 id = "myHeader"><ins>Header</ins></h1>
     <p>"font-size:80px;"</p>
     <h1>Small Header</h1>
-    <a href="https://www.w3schools.com/html/default.asp" target = "_blank">This is a link</a>
+    <a href="https://www.w3schools.com/html/default.asp" target = "_blank" >This is a link</a>
     <p>This is a paragraph <br> with a line break</p>    
     <p title="Tooltip">Paragraph.</p>
     <p> <b>Paragraph 2</b> </p>
 
     <h1>This is heading 1</h1>
-    <p>This is some text.</p>
+    <button class="js-show-hide-text">Click ME!</button>
+    <p class="js-my-text" id = "test">Ping.</p>
+    <p class="js-my-other-text">Pong.</p>
     <hr>
     <h2>This is heading 2</h2>
     <p>This is some other text.</p>
     <hr>
-    <h2>This is heading 3</h2>
-    <p>This is some other text.</p><hr>
     <pre> 
     This     
     is     
@@ -28,20 +29,61 @@
     pre-formatted     
     font.     
     </pre>
-    <h1>Formatting</h1>
+    
+    <h1><ins>Formatting</ins></h1>
     <p>Normal Text (p)</p>
     <p><b>Bold Text (b)</b></p>
     <p><strong>Strong Text (strong)</strong></p>
     <p><i>Italic Text (i)</i></p>
     <p><em>Emphasized Text (em)</em></p>
-    <p><mark style = "background-color: fuchsia;">Marked Text (mark)</mark></p>
-    <p><small>Small Text (small)</small></p>
+    <p><mark style = "background-color: rgb(174,175,175);">Marked Text (mark)</mark></p>
+    <p id="small"><small>Small Text (small)</small></p>
     <p><del>Deleted Text (del)</del></p>
     <p><ins>Inserted Text (ins)</ins></p>
     <p><sub>Subscript Text (sub)</sub></p>
     <p><sup>Superscript Text (sup)</sup></p>
+    
     <h4>A<sup>2</sup> + B<sup>2</sup> = C<sup>2</sup></h4>
-    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <p>The <abbr title="World Health Organization"><a href="https://en.wikipedia.org/wiki/World_Health_Organization" target = "_blank" >W.H.O</a></abbr> was founded in 1948.</p>
     <!--This is a comment-->
+    <table>
+        <tr>
+            <th></th>
+            <th>Person 1</th>
+            <th>Person 2</th>
+            <th>Person 3</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td id = "odd">Emil</td>
+            <td id = "odd">Tobias</td>
+            <td id = "odd">Linus</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td id = "even">16</td>
+            <td id = "even">14</td>
+            <td id = "even">10</td>
+        </tr>
+    </table>
+    <p id="emoji">&#128516;</p>
+    <h1 id = "date">Clock!</h1>
+    <hr>
+    <button class = "button" id = "dice" type = "button"> Roll </button>
+    <p id = "random"> Roll the Dice! </p> 
+    <hr>
+    <button class = "button" id = "counter-up" type = "button"> Gain + 1 Cash | You have: 0 </button>
+    <br>
+    <br>
+    <button class = "button" id = "upgrade" type = "button"> Upgrade + 1 (-10) | Lvl : 0 </button>
+    <br>
+    <br>
+    <button class = "button" id = "upgrade2" type = "button"> Upgrade + 5 (-50) | Lvl : 0</button>
+    <br>
+    <br>
+    <button class = "button" id = "buy-gold" type = "button"> Gold Price: 50 | You have: 0</button>
+    <br>
+    <br>
+    <button class = "button" id = "gold-upgrade" type = "button"> Upgrade + 10 (-50 G) | Lvl : 0</button>
 </body>
 </html>

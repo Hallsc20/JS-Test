@@ -1,0 +1,14 @@
+body {
+    background-color:rgb(22, 174, 194); 
+    color:white; text-align:center; 
+    font-family: 'Courier New', Courier, monospace; 
+    border: 20px double rgb(255, 255, 255);
+    outline-color:fuchsia
+}
+
+#myHeader {
+    font-size:80px; background-color:crimson
+}
+pre {
+    font-size:30px;
+}
